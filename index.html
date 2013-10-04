@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap - Advanced Select</title>
+    <title>Twitter Bootstrap 3.0 - Extended &lt;select&gt; UI with jQuery Select2 and Chosen</title>
     <meta charset="utf-8">
-    <meta name="description" content="An advanced Bootstrap select component, extended with Select2 and Chosen.">
+    <meta name="description" content="Twitter Bootstrap 3.0, integrate and extended default &lt;select&gt; UI with jQuery Select2 and Chosen">
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Bootstrap - Advanced Select with jQuery Select2 and Chosen" />
-    <meta property="og:description" content="An advanced Bootstrap select component, extended with Select2 and Chosen." />
+    <meta property="og:title" content="Twitter Bootstrap 3.0 - Extended &lt;select&gt; UI with jQuery Select2 and Chosen" />
+    <meta property="og:description" content="Twitter Bootstrap 3.0, integrate and extended default &lt;select&gt; UI with jQuery Select2 and Chosen" />
     <meta property="og:url" content="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" />
     <meta property="og:site_name" content="Malaysia Wordpress Developer, Graphic Web Designer, Opencart, Custom CMS Theme Development" />
     <meta property="og:type" content="product" />
     <meta property="og:image" content="screenshot.png" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
     <link rel="stylesheet" href="core/css/core.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,21 +23,60 @@
 <div id="main-demo-body">
     <div class="container">
 
-        <div class="share-the-love">
-            <div class="download">
-                <a href="https://github.com/syaifulsz/bootstrap-advanced-select" class="btn btn-primary btn-lg">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
-            </div><!-- .download -->
-            <div class="share facebook-share"><div class="fb-like" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
-            <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-via="syaifulsz">Tweet</a></div>
-            <div class="share googleplus-share">
-                <div class="g-plus" data-action="share" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/"></div>
-            </div>
-            <div class="clearfix"></div><!-- .clearfix -->
-        </div><!-- .share-the-love -->
+        <div class="demo-primary-header">
+            <div class="well">
+                <h1 class="main-title">
+                    <span class="title">Twitter Bootstrap</span>
+                    <span class="sub-title">Integrated with Select2 and Chosen</span>
+                </h1>
+                <p>Twitter Bootstrap 3.0, integrate and extended default &lt;select&gt; UI with jQuery Select2 and Chosen.</p>
+                <p>For those who bored with default UI, here's Twitter Bootstrap 3.0 that I've integrate and extended
+                with "Select2" and "Chosen". Enjoy and do share :)</p>
+                <p>Many Thanks and appriciation goes to:</p>
+                <ul>
+                    <li>Mark Otto and Jacob Thornton for Bootstrap 3.0</li>
+                    <li>Igor Vaynberg for Select2</li>
+                    <li>and many folks at Harvest for Chosen</li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="download">
+                            <a href="https://github.com/syaifulsz/bootstrap-advanced-select" class="btn btn-primary btn-lg btn-block">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
+                        </div><!-- .download -->
+                    </div><!-- .col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="share facebook-share"><div class="fb-like" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
+                        <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-via="syaifulsz">Tweet</a></div>
+                        <div class="share googleplus-share">
+                            <div class="g-plus" data-action="share" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/"></div>
+                        </div><!-- .share -->
+                    </div><!-- .col-md-6 -->
+                </div><!-- .row -->
+            </div><!-- .well -->
+        </div><!-- .demo-primary-header -->
 
         <div class="demo-widget">
             <div class="demo-widget-header">Select2</div>
             <div class="demo-widget-body">
+
+                <div class="demo-code">
+                    <ol>
+                        <li><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span></li>
+                        <li class="indent-1"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span></li>
+                        <li class="indent-2"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span></li>
+                        <li class="indent-2"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"select2 select2-block"</span>&gt;</li>
+                        <li class="indent-3"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"select2-default"</span>&gt;</li>
+                        <li class="indent-4">...</li>
+                        <li class="indent-3"><span class="nt">&lt;/select&gt;</span></li>
+                        <li class="indent-2"><span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- .select2 --&gt;</span></li>
+                        <li class="indent-1"><span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- .input-group --&gt;</span></li>
+                        <li><span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- .form-group --&gt;</span></li>
+                    </ol>
+                </div><!-- .demo-code -->
+
                 <form action="#">
 
                     <div class="form-group">
@@ -121,6 +161,21 @@
             <div class="demo-widget-header">Chosen</div>
             <div class="demo-widget-body">
                 <form action="#">
+
+                    <div class="demo-code">
+                        <ol>
+                            <li><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span></li>
+                            <li class="indent-1"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span></li>
+                            <li class="indent-2"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;</span></li>
+                            <li class="indent-2"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chosen-select chosen-select-block"</span>&gt;</li>
+                            <li class="indent-3"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"chosen-select-default"</span>&gt;</li>
+                            <li class="indent-4">...</li>
+                            <li class="indent-3"><span class="nt">&lt;/select&gt;</span></li>
+                            <li class="indent-2"><span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- .chosen-select --&gt;</span></li>
+                            <li class="indent-1"><span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- .input-group --&gt;</span></li>
+                            <li><span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- .form-group --&gt;</span></li>
+                        </ol>
+                    </div><!-- .demo-code -->
 
                     <div class="form-group">
                         <div class="input-group">
@@ -212,17 +267,29 @@
             </div><!-- .demo-widget-body -->
         </div><!-- #demo -->
 
-        <div class="share-the-love">
-            <div class="download">
-                <a href="https://github.com/syaifulsz/bootstrap-advanced-select" class="btn btn-primary btn-lg">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
-            </div><!-- .download -->
-            <div class="share facebook-share"><div class="fb-like" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
-            <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-via="syaifulsz">Tweet</a></div>
-            <div class="share googleplus-share">
-                <div class="g-plus" data-action="share" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/"></div>
-            </div>
-            <div class="clearfix"></div><!-- .clearfix -->
-        </div><!-- .share-the-love -->
+        <div class="demo-primary-header">
+            <div class="well">
+                <p>Contribution with love by <a href="http://syaifulshahzinan.com/">Syaiful Shah Zinan</a></p>
+                <p><div class="fb-like" data-href="https://www.facebook.com/syaifulshahzinanblog" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div></p>
+                <p><a href="https://twitter.com/syaifulsz" class="twitter-follow-button" data-show-count="false">Follow @syaifulsz</a></p>
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="download">
+                            <a href="https://github.com/syaifulsz/bootstrap-advanced-select" class="btn btn-primary btn-lg btn-block">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
+                        </div><!-- .download -->
+                    </div><!-- .col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="share facebook-share"><div class="fb-like" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
+                        <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-via="syaifulsz">Tweet</a></div>
+                        <div class="share googleplus-share">
+                            <div class="g-plus" data-action="share" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/"></div>
+                        </div><!-- .share -->
+                    </div><!-- .col-md-6 -->
+                </div><!-- .row -->
+            </div><!-- .well -->
+        </div><!-- .demo-primary-header -->
     </div><!-- .container -->
 </div><!-- #main-demo-body -->
 
