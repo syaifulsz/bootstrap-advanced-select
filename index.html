@@ -8,15 +8,57 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+
 <div id="main-demo-body">
-    <div class="demo-widget">
-        <div class="demo-widget-header">Select2</div>
-        <div class="demo-widget-body">
-            <form action="#">
+    <div class="container">
 
-                <div class="form-group">
-                    <div class="input-group">
-                        <span class="input-group-addon">Label</span>
+        <div class="share-the-love">
+            <div class="download">
+                <a href="https://github.com/syaifulsz/bootstrap-advanced-select" class="btn btn-primary btn-lg">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
+            </div><!-- .download -->
+            <div class="share facebook-share"><div class="fb-like" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
+            <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-via="syaifulsz">Tweet</a></div>
+            <div class="share googleplus-share">
+                <div class="g-plus" data-action="share" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/"></div>
+            </div>
+            <div class="clearfix"></div><!-- .clearfix -->
+        </div><!-- .share-the-love -->
+
+        <div class="demo-widget">
+            <div class="demo-widget-header">Select2</div>
+            <div class="demo-widget-body">
+                <form action="#">
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">Label</span>
+                            <div class="select2 select2-block">
+                                <select name="" id="" class="select2-default">
+                                    <option value="">Example</option>
+                                    <option value="">Test 1</option>
+                                    <option value="">Test 2</option>
+                                    <option value="">Test 3</option>
+                                </select>
+                            </div><!-- .chosen-select -->
+                        </div><!-- .input-group -->
+                    </div><!-- .form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="select2 select2-block">
+                                <select name="" id="" class="select2-default">
+                                    <option value="">Example</option>
+                                    <option value="">Test 1</option>
+                                    <option value="">Test 2</option>
+                                    <option value="">Test 3</option>
+                                </select>
+                            </div><!-- .chosen-select -->
+                            <span class="input-group-addon">Label</span>
+                        </div><!-- .input-group -->
+                    </div><!-- .form-group -->
+
+                    <div class="form-group">
                         <div class="select2 select2-block">
                             <select name="" id="" class="select2-default">
                                 <option value="">Example</option>
@@ -24,110 +66,56 @@
                                 <option value="">Test 2</option>
                                 <option value="">Test 3</option>
                             </select>
-                        </div><!-- .chosen-select -->
-                    </div><!-- .input-group -->
-                </div><!-- .form-group -->
+                        </div><!-- .select2 -->
+                    </div><!-- .form-group -->
 
-                <div class="form-group">
-                    <div class="input-group">
+                    <div class="form-group has-error">
                         <div class="select2 select2-block">
                             <select name="" id="" class="select2-default">
-                                <option value="">Example</option>
+                                <option value="">.has-error</option>
                                 <option value="">Test 1</option>
                                 <option value="">Test 2</option>
                                 <option value="">Test 3</option>
                             </select>
-                        </div><!-- .chosen-select -->
-                        <span class="input-group-addon">Label</span>
-                    </div><!-- .input-group -->
-                </div><!-- .form-group -->
+                        </div><!-- .select2 -->
+                    </div><!-- .form-group -->
 
-                <div class="form-group">
-                    <div class="select2 select2-block">
-                        <select name="" id="" class="select2-default">
-                            <option value="">Example</option>
-                            <option value="">Test 1</option>
-                            <option value="">Test 2</option>
-                            <option value="">Test 3</option>
-                        </select>
-                    </div><!-- .select2 -->
-                </div><!-- .form-group -->
-
-                <div class="form-group has-error">
-                    <div class="select2 select2-block">
-                        <select name="" id="" class="select2-default">
-                            <option value="">.has-error</option>
-                            <option value="">Test 1</option>
-                            <option value="">Test 2</option>
-                            <option value="">Test 3</option>
-                        </select>
-                    </div><!-- .select2 -->
-                </div><!-- .form-group -->
-
-                <div class="form-group has-warning">
-                    <div class="select2 select2-block">
-                        <select name="" id="" class="select2-default">
-                            <option value="">.has-warning</option>
-                            <option value="">Test 1</option>
-                            <option value="">Test 2</option>
-                            <option value="">Test 3</option>
-                        </select>
-                    </div><!-- .select2 -->
-                </div><!-- .form-group -->
-
-                <div class="form-group has-success">
-                    <div class="select2 select2-block">
-                        <select name="" id="" class="select2-default">
-                            <option value="">.has-success</option>
-                            <option value="">Test 1</option>
-                            <option value="">Test 2</option>
-                            <option value="">Test 3</option>
-                        </select>
-                    </div><!-- .select2 -->
-                </div><!-- .form-group -->
-
-            </form>
-        </div><!-- .demo-widget-body -->
-    </div><!-- #demo -->
-
-    <div class="demo-divider"></div>
-
-    <div class="demo-widget">
-        <div class="demo-widget-header">Chosen</div>
-        <div class="demo-widget-body">
-            <form action="#">
-
-                <div class="form-group">
-                    <div class="input-group">
-                        <span class="input-group-addon">Label</span>
-                        <div class="chosen-select chosen-select-block">
-                            <select name="" id="" class="chosen-select-default">
-                                <option value="">Example</option>
+                    <div class="form-group has-warning">
+                        <div class="select2 select2-block">
+                            <select name="" id="" class="select2-default">
+                                <option value="">.has-warning</option>
                                 <option value="">Test 1</option>
                                 <option value="">Test 2</option>
                                 <option value="">Test 3</option>
                             </select>
-                        </div><!-- .chosen-select -->
-                    </div><!-- .input-group -->
-                </div><!-- .form-group -->
+                        </div><!-- .select2 -->
+                    </div><!-- .form-group -->
 
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="chosen-select chosen-select-block">
-                            <select name="" id="" class="chosen-select-default">
-                                <option value="">Example</option>
+                    <div class="form-group has-success">
+                        <div class="select2 select2-block">
+                            <select name="" id="" class="select2-default">
+                                <option value="">.has-success</option>
                                 <option value="">Test 1</option>
                                 <option value="">Test 2</option>
                                 <option value="">Test 3</option>
                             </select>
-                        </div><!-- .chosen-select -->
-                        <span class="input-group-addon">Label</span>
-                    </div><!-- .input-group -->
-                </div><!-- .form-group -->
+                        </div><!-- .select2 -->
+                    </div><!-- .form-group -->
 
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-6">
+                </form>
+            </div><!-- .demo-widget-body -->
+        </div><!-- #demo -->
+
+        <div class="demo-divider"></div>
+
+        <div class="demo-widget">
+            <div class="demo-widget-header">Chosen</div>
+            <div class="demo-widget-body">
+                <form action="#">
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">Label</span>
                             <div class="chosen-select chosen-select-block">
                                 <select name="" id="" class="chosen-select-default">
                                     <option value="">Example</option>
@@ -136,8 +124,11 @@
                                     <option value="">Test 3</option>
                                 </select>
                             </div><!-- .chosen-select -->
-                        </div><!-- .col-md-6 -->
-                        <div class="col-md-6">
+                        </div><!-- .input-group -->
+                    </div><!-- .form-group -->
+
+                    <div class="form-group">
+                        <div class="input-group">
                             <div class="chosen-select chosen-select-block">
                                 <select name="" id="" class="chosen-select-default">
                                     <option value="">Example</option>
@@ -146,46 +137,84 @@
                                     <option value="">Test 3</option>
                                 </select>
                             </div><!-- .chosen-select -->
-                        </div><!-- .col-md-6 -->
-                    </div><!-- .row -->
-                </div><!-- .form-group -->
+                            <span class="input-group-addon">Label</span>
+                        </div><!-- .input-group -->
+                    </div><!-- .form-group -->
 
-                <div class="form-group has-error">
-                    <div class="chosen-select chosen-select-block">
-                        <select name="" id="" class="chosen-select-default">
-                            <option value="">.has-error</option>
-                            <option value="">Test 1</option>
-                            <option value="">Test 2</option>
-                            <option value="">Test 3</option>
-                        </select>
-                    </div><!-- .select2 -->
-                </div><!-- .form-group -->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="chosen-select chosen-select-block">
+                                    <select name="" id="" class="chosen-select-default">
+                                        <option value="">Example</option>
+                                        <option value="">Test 1</option>
+                                        <option value="">Test 2</option>
+                                        <option value="">Test 3</option>
+                                    </select>
+                                </div><!-- .chosen-select -->
+                            </div><!-- .col-md-6 -->
+                            <div class="col-md-6">
+                                <div class="chosen-select chosen-select-block">
+                                    <select name="" id="" class="chosen-select-default">
+                                        <option value="">Example</option>
+                                        <option value="">Test 1</option>
+                                        <option value="">Test 2</option>
+                                        <option value="">Test 3</option>
+                                    </select>
+                                </div><!-- .chosen-select -->
+                            </div><!-- .col-md-6 -->
+                        </div><!-- .row -->
+                    </div><!-- .form-group -->
 
-                <div class="form-group has-warning">
-                    <div class="chosen-select chosen-select-block">
-                        <select name="" id="" class="chosen-select-default">
-                            <option value="">.has-warning</option>
-                            <option value="">Test 1</option>
-                            <option value="">Test 2</option>
-                            <option value="">Test 3</option>
-                        </select>
-                    </div><!-- .select2 -->
-                </div><!-- .form-group -->
+                    <div class="form-group has-error">
+                        <div class="chosen-select chosen-select-block">
+                            <select name="" id="" class="chosen-select-default">
+                                <option value="">.has-error</option>
+                                <option value="">Test 1</option>
+                                <option value="">Test 2</option>
+                                <option value="">Test 3</option>
+                            </select>
+                        </div><!-- .select2 -->
+                    </div><!-- .form-group -->
 
-                <div class="form-group has-success">
-                    <div class="chosen-select chosen-select-block">
-                        <select name="" id="" class="chosen-select-default">
-                            <option value="">.has-success</option>
-                            <option value="">Test 1</option>
-                            <option value="">Test 2</option>
-                            <option value="">Test 3</option>
-                        </select>
-                    </div><!-- .select2 -->
-                </div><!-- .form-group -->
+                    <div class="form-group has-warning">
+                        <div class="chosen-select chosen-select-block">
+                            <select name="" id="" class="chosen-select-default">
+                                <option value="">.has-warning</option>
+                                <option value="">Test 1</option>
+                                <option value="">Test 2</option>
+                                <option value="">Test 3</option>
+                            </select>
+                        </div><!-- .select2 -->
+                    </div><!-- .form-group -->
 
-            </form>
-        </div><!-- .demo-widget-body -->
-    </div><!-- #demo -->
+                    <div class="form-group has-success">
+                        <div class="chosen-select chosen-select-block">
+                            <select name="" id="" class="chosen-select-default">
+                                <option value="">.has-success</option>
+                                <option value="">Test 1</option>
+                                <option value="">Test 2</option>
+                                <option value="">Test 3</option>
+                            </select>
+                        </div><!-- .select2 -->
+                    </div><!-- .form-group -->
+
+                </form>
+            </div><!-- .demo-widget-body -->
+        </div><!-- #demo -->
+
+        <div class="share-the-love">
+            <div class="download">
+                <a href="https://github.com/syaifulsz/bootstrap-advanced-select" class="btn btn-primary btn-lg">Download at GitHub <i class="glyphicon glyphicon-download-alt"></i></a>
+            </div><!-- .download -->
+            <div class="share facebook-share"><div class="fb-like" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="true"></div></div>
+            <div class="share twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://syaifulshahzinan.com/community/bootstrap-advanced-select/" data-via="syaifulsz">Tweet</a></div>
+            <div class="share googleplus-share">
+                <div class="g-plus" data-action="share" data-href="http://syaifulshahzinan.com/community/bootstrap-advanced-select/"></div>
+            </div>
+            <div class="clearfix"></div><!-- .clearfix -->
+        </div><!-- .share-the-love -->
+    </div><!-- .container -->
 </div><!-- #main-demo-body -->
 
 <script src="core/assets/jquery/jquery.min.js"></script>
@@ -193,6 +222,36 @@
 <script src="core/assets/select2/select2.min.js"></script>
 <script src="core/assets/chosen/chosen.jquery.min.js"></script>
 <script src="script.js"></script>
+
+<script>
+
+(function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=205397789496743";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19410112-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
 
 </body>
 </html>

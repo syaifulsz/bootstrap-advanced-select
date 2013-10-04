@@ -118,7 +118,7 @@
   }
 }
 
-.select2-validation(@color1: @_carlistWarning, @color2: @_carlistWarningLight, @color3: @_carlistWarningLigher) {
+.select2-validation(@color1: @_themeWarning, @color2: @_themeWarningLight, @color3: @_themeWarningLigher) {
 
   .select2 {
 
@@ -154,7 +154,7 @@
 
 .has-error {
 
-  .select2-validation(@_carlistError, @_carlistErrorLight, @_carlistErrorLighter);
+  .select2-validation(@_themeError, @_themeErrorLight, @_themeErrorLighter);
 }
 
 .has-warning {
@@ -164,7 +164,7 @@
 
 .has-success {
 
-  .select2-validation(@_carlistSuccess, @_carlistSuccessLight, @_carlistSuccessLigher);
+  .select2-validation(@_themeSuccess, @_themeSuccessLight, @_themeSuccessLigher);
 }
 
 .input-group {
@@ -323,7 +323,7 @@
   }
 }
 
-.chosen-select(@borderColor: @_carlistError, @bgColor: @_carlistErrorLight) {
+.chosen-select(@borderColor: @_themeError, @bgColor: @_themeErrorLight) {
 
   .chosen-select {
 
@@ -364,17 +364,17 @@
 
 .has-error {
 
-  .chosen-select(@_carlistError, @_carlistErrorLight);
+  .chosen-select(@_themeError, @_themeErrorLight);
 }
 
 .has-warning {
 
-  .chosen-select(@_carlistWarning, @_carlistWarningLight);
+  .chosen-select(@_themeWarning, @_themeWarningLight);
 }
 
 .has-success {
 
-  .chosen-select(@_carlistSuccess, @_carlistSuccessLight);
+  .chosen-select(@_themeSuccess, @_themeSuccessLight);
 }
 
 .input-group {
